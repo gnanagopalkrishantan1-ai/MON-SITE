@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MON SITE - Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <span class="logo-icon"></span>
+                <span class="logo-text">MON SITE</span>
+            </div>
+            <nav class="nav">
+                <a href="index.html">Accueil</a>
+                <a href="index.html#article">Article</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <a href="https://buy.stripe.com/fZuaEZ7aYgb0aNV97y5c402" target="_blank" class="btn-primary header-btn">Commander</a>
+        </div>
+    </header>
+
+    <section class="hero hero-contact">
+        <div class="hero-content">
+            <div class="hero-badge">Discutons de votre projet</div>
+            <h1 class="hero-title">Prenez contact avec nous</h1>
+            <p class="hero-subtitle">Nous sommes prêts à créer le site qui propulsera votre entreprise.</p>
+        </div>
+    </section>
+
+    <div class="contact-main">
+        <div class="container contact-grid">
+            <div class="contact-form-section">
+                <h2>Envoyez-nous un message</h2>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group"><label>Nom complet</label><input type="text" id="name" required></div>
+                    <div class="form-group"><label>Email</label><input type="email" id="email" required></div>
+                    <div class="form-group"><label>Objet</label><input type="text" id="subject" required></div>
+                    <div class="form-group"><label>Message</label><textarea id="message" rows="8" required></textarea></div>
+                    <button type="submit" id="submitBtn" class="btn-primary">Envoyer le message</button>
+                </form>
+                <div id="statusMessage" class="status-message"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
